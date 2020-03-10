@@ -16,11 +16,11 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
     }
-
+    private val number=12
     private fun rollDice() {
         val resultText: TextView = findViewById(R.id.result_text)
         val randomInt = Random().nextInt(6) + 1
-        resultText.text = randomInt.toString()
+        resultText.text = number.toString()
 
     }
 }
